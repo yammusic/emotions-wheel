@@ -1,0 +1,143 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+:root {
+  --angle-1: 60deg;
+  --angle-2: 120deg;
+  --angle-3: 180deg;
+  --angle-4: 240deg;
+  --angle-5: 300deg;
+  --angle-6: 360deg;
+
+  --laps: 1;
+  --position: calc((var(--laps) * 60deg) - 30deg);
+
+  --angry-color: #c84204;
+  --scared-color: #c585b5;
+  --happy-color: #cf7088;
+  --powerful-color: #ffab04;
+  --paceful-color: #2a761e;
+  --sad-color: #1a98cb;
+}
+
+/* ---- Roullete ---- */
+
+/* div.roullete {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid black;
+  position: relative;
+
+  transform: rotate(-30deg);
+} */
+
+/* ---- Line ---- */
+
+/* div.line {
+  width: 300px;
+  height: 3px;
+  background: black;
+  position: absolute;
+  top: 149px;
+  left: 0;
+} */
+/* div.line_1 { transform: rotate(var(--angle-1)); }
+div.line_2 { transform: rotate(var(--angle-2)); }
+div.line_3 { transform: rotate(var(--angle-3)); } */
+
+/* div.line_1 { transform: rotate(calc(var(--angle-1) - 30deg)); }
+div.line_2 { transform: rotate(calc(var(--angle-2) - 30deg)); }
+div.line_3 { transform: rotate(calc(var(--angle-3) - 30deg)); } */
+
+/* ---- Fill ---- */
+
+/* div.fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  clip: rect(0px, 300px, 300px, 150px);
+}
+div.fill::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  clip: rect(0px, 150px, 200px, 0px);
+  transform: rotate(60deg);
+} */
+/* div.fill_1 { transform: rotate(0deg); }
+div.fill_2 { transform: rotate(var(--angle-1)); }
+div.fill_3 { transform: rotate(var(--angle-2)); }
+div.fill_4 { transform: rotate(var(--angle-3)); }
+div.fill_5 { transform: rotate(var(--angle-4)); }
+div.fill_6 { transform: rotate(var(--angle-5)); } */
+
+/* div.fill_1::after { background: #E53935; }
+div.fill_2::after { background: #D81B60; }
+div.fill_3::after { background: #8E24AA; }
+div.fill_4::after { background: #1E88E5; }
+div.fill_5::after { background: #039BE5; }
+div.fill_6::after { background: #00ACC1; } */
+
+/* div.fill_1::after { background: var(--angry-color); }
+div.fill_2::after { background: var(--scared-color); }
+div.fill_3::after { background: var(--happy-color); }
+div.fill_4::after { background: var(--powerful-color); }
+div.fill_5::after { background: var(--paceful-color); }
+div.fill_6::after { background: var(--sad-color); } */
+
+/* ---- Content ---- */
+
+/* .content {
+  padding-top: 20px;
+  height: 280px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+} */
+
+/* .content span.percent {
+  display: block;
+  font-size: 1.5rem;
+} */
+
+/* .content_1 { transform: rotate(calc(var(--angle-1) - 30deg)); }
+.content_2 { transform: rotate(calc(var(--angle-2) - 30deg)); }
+.content_3 { transform: rotate(calc(var(--angle-3) - 30deg)); }
+.content_4 { transform: rotate(calc(var(--angle-4) - 30deg)); }
+.content_5 { transform: rotate(calc(var(--angle-5) - 30deg)); }
+.content_6 { transform: rotate(calc(var(--angle-6) - 30deg)); } */
+/* .content_1 { transform: rotate(calc(var(--angle-1) - 30deg)); }
+.content_2 { transform: rotate(calc(var(--angle-2) - 30deg)); }
+.content_3 { transform: rotate(calc(var(--angle-3) - 30deg)); }
+.content_4 { transform: rotate(calc(var(--angle-4) - 30deg)); }
+.content_5 { transform: rotate(calc(var(--angle-5) - 30deg)); }
+.content_6 { transform: rotate(calc(var(--angle-6) - 30deg)); } */
+
+/* ---- Keyframe ---- */
+
+/* .roullete.loop {
+  animation: rotation 1s ease-in-out forwards;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(30deg);
+  }
+  to {
+    transform: rotate(calc(360deg * 10 - var(--position)));
+  }
+} */
